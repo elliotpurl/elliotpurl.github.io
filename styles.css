@@ -24,7 +24,7 @@ body {
 	background:
 		radial-gradient(ellipse at 15% 50%, rgba(255, 240, 160, 0.75), transparent 50%),
 		radial-gradient(ellipse at 50% 75%, rgba(255, 161, 221, 0.75), transparent 50%),
-		radial-gradient(ellipse at 74% 50%, rgba(161, 215, 255, 0.75), transparent 50%),
+		radial-gradient(ellipse at 75% 50%, rgba(161, 215, 255, 0.75), transparent 50%),
         linear-gradient(110deg, #fff3bd, #f4d9ee 75%, #d7edff);
 	content: "";
 }
@@ -107,9 +107,20 @@ h1 {
 .footer-disclaimer {
 	max-width: 75rem;
 	margin: 0 auto;
-	font-size: 0.75rem;
+	font-size: 1rem;
 	line-height: 1.5;
 	text-align: center;
+}
+
+.supervision-section {
+	width: min(100%, 1280px);
+	margin: 0 auto;
+	padding: 0 clamp(1.5rem, 6vw, 4.5rem);
+}
+
+.supervision-card {
+	background: rgba(255, 248, 232, 0.88);
+	padding: clamp(1.25rem, 3vw, 2rem);
 }
 
 .about-section {
@@ -145,10 +156,10 @@ h1 {
 	right: 0;
 	bottom: 0;
 	width: 60%;
-	height: 45%;
+	height: 40%;
 	border: 0.5rem solid rgba(255, 248, 232, 0.92);
 	object-fit: cover;
-	object-position: center 58%;
+	object-position: center 25%;
 }
 
 .about-card {
@@ -191,7 +202,7 @@ h1 {
 	width: 100%;
 	aspect-ratio: 1.2;
 	object-fit: cover;
-	object-position: center 38%;
+	object-position: center 30%;
 }
 
 .hours-card,
@@ -223,7 +234,14 @@ h1 {
 .insurance-card {
 	display: flex;
 	flex-direction: column;
-	height: calc(100% - 4rem);
+	height: auto;
+	padding: clamp(0.75rem, 1.5vw, 1.25rem);
+}
+
+.details-side {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .insurance-card h3 {
@@ -237,9 +255,8 @@ h1 {
 .insurance-list {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
-	align-content: space-between;
+	align-content: start;
 	gap: 0.50rem 1.5rem;
-	flex: 1;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -295,7 +312,7 @@ h1 {
 	.photo-wrap {
 		position: static;
 		width: min(100%, 420px);
-		margin-inline: auto;
+		margin: 0 auto 1.5rem;
 		transform: none;
 	}
 
