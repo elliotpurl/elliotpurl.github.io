@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#fff3bd">
+	<meta name="description" content="Get in touch with Elliot Purl about therapy services and general questions.">
+	<title>Contact | Transformative Journey LLC</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Droid+Sans:wght@400;700&family=Droid+Serif:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../styles.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+	<script src="contact.js" defer></script>
+</head>
+<body>
+	<main class="contact-page">
+		<header class="contact-header">
+			<a class="contact-brand" href="../index.html">Transformative Journey LLC</a>
+			<details class="contact-menu">
+				<summary class="contact-menu-toggle">
+					<span class="contact-menu-icon" aria-hidden="true"><span></span></span>
+					<span>Menu</span>
+				</summary>
+				<nav class="contact-nav" aria-label="Main navigation">
+					<a href="../index.html">Home</a>
+					<a href="contactme.html" aria-current="page">Contact</a>
+					<a href="covidprecaution.html">COVID precautions</a>
+				</nav>
+			</details>
+		</header>
+
+		<section class="contact-content" aria-labelledby="contact-title">
+			<div class="contact-heading">
+				<p class="contact-eyebrow">A good start</p>
+				<h1 id="contact-title">Interested in scheduling a 15-minute consult?</h1>
+				<p class="contact-lede">Have lingering questions I can answer? Send me a message and I’ll get back to you by email.</p>
+			</div>
+
+			<div class="contact-card">
+				<div class="contact-copy">
+					<p class="contact-eyebrow">Get in touch</p>
+					<h2>Let's Chat</h2>
+					<p>Share a little about what you’re looking for.</p>
+					<form class="contact-form" action="https://formspree.io/f/mvkkdkzr" method="POST">
+						<input type="hidden" name="_subject" value="New contact message from Transformative Journey LLC">
+						<div class="contact-form-honeypot" aria-hidden="true">
+							<label for="contact-website">Leave this field empty</label>
+							<input id="contact-website" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+						</div>
+						<div class="contact-form-field">
+							<label for="contact-name">Name</label>
+							<input id="contact-name" name="name" type="text" placeholder="Name" autocomplete="name" required>
+						</div>
+						<div class="contact-form-field">
+							<label for="contact-email">Email</label>
+							<input id="contact-email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+						</div>
+						<div class="contact-form-field">
+							<label for="contact-message">Message</label>
+							<textarea id="contact-message" name="message" rows="5" placeholder="I'm interested in scheduling a consult."></textarea>
+							<button class="contact-message-suggestion" type="button">Use suggested message</button>
+						</div>
+						<button class="contact-form-submit" type="submit">Send message <span aria-hidden="true">↗</span></button>
+					</form>
+					<p class="contact-form-note">Formspree will email me the information you share here. I’ll reply to you directly by email.</p>
+					<p class="contact-form-status" role="status" aria-live="polite" hidden></p>
+					<p class="contact-form-disclaimer">Information shared in this form is not confidential, please DO NOT provide personal information beyond name/email. This form is for general inquiries and is not monitored for emergencies.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="site-footer contact-site-footer">
+		<p class="footer-disclaimer">Supervised by Amy Mild, LCSW (L6225), amymildlcsw@gmail.com</p>
+		<p class="footer-disclaimer">I am a Master's-level candidate holding a certificate to practice in Oregon as a social work associate. I practice under a board-approved clinical supervisor, pursuant to OAR 877-020-0012, at Mindful Therapy Group, P.C.</p>
+		<p class="footer-disclaimer contact-footer-details">
+			<a href="tel:+19713195796">971-319-5796</a>
+			<span aria-hidden="true"> · </span>
+			<a href="mailto:elliot.purl22@gmail.com">elliot.purl22@gmail.com</a>
+		</p>
+	</footer>
+</body>
+</html>
